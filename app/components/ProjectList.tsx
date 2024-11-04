@@ -41,7 +41,12 @@ const ProjectList = () => {
           <p key={project.name} className="text-xl leading-[1.6] flex items-center">
             <span className="bullet">●</span>
             <span className="flex items-center w-full truncate">
-              <a className="custom-link whitespace-nowrap" href={project.url}>
+              <a
+                className="custom-link whitespace-nowrap"
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {project.name}
               </a>
               <span className="ml-2 whitespace-nowrap">
