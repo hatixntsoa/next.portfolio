@@ -22,7 +22,14 @@ const ReachMe = () => {
         Feel free to reach out to me via&nbsp;
         {contactLinks.map((link, index) => (
           <span key={link.name}>
-            <a className="custom-link" href={link.url}>{link.name}</a>
+            <a
+              className="custom-link"
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.name}
+            </a>
             {index < contactLinks.length - 1 ? (index === contactLinks.length - 2 ? " or " : ", ") : ""}
           </span>
         ))}
