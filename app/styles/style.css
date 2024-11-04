@@ -1,0 +1,120 @@
+@import url("./font.css");
+@import url("./colors.css");
+
+body {
+  margin: 0;
+  font-family: 'NerdFont', monospace;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  user-select: none;
+}
+
+/* Center container on the page with a width of 50% */
+.container {
+  width: 58%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Ensures left alignment of content */
+}
+
+/* Content aligned to the left within the container */
+.content {
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Profile image with left alignment */
+.round-img {
+  display: block;
+  margin: 100px auto 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.command-line {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.theme-toggler {
+  border-radius: 50%;
+  padding: 10px;
+  
+  /* height: 50px;
+  width: 50px; */
+  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+
+  top: 40px;
+  right: 40px;
+
+  background: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.theme-toggler:hover {
+  background-color: var(--hover-color);
+}
+
+.theme-toggler svg{
+  fill: var(--primary-color);
+}
+
+.theme-toggler svg:last-child {
+  display: none;
+}
+
+.light .theme-toggler svg:first-child {
+  display: none;
+}
+
+.light .theme-toggler svg:last-child {
+  display: block;
+}
+
+.project-list p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between bullet and text */
+  margin: 0;
+  padding: 5px 0;
+}
+
+.bullet {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.footer {
+  margin: 50px 0 150px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Highlighted text */
+.highlight {
+  font-weight: bold;
+  color: var(--highlight-color);
+}
+
+/* Links styling */
+.custom-link {
+  font-weight: bold;
+  color: var(--highlight-color) !important;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}

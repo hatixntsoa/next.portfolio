@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #c9d1d9;
+  --secondary-color: #21262d;
+  --background-color: #010409;
+  --highlight-color: #0084ff;
+  --hover-color: #30363d;
+  --scroll-background: #333;
+  --scroll-handle: #555;
+  --scroll-handle-hover: #777;
+}
+
+.light {
+  --primary-color: #000000;
+  --secondary-color: #cac8c8;
+  --background-color: #f2f2f2;
+  --highlight-color: #0969da;
+  --hover-color: #d3d3d3;
+  --scroll-background: #cac8c8;
+  --scroll-handle: #9b9595;
+  --scroll-handle-hover: #a59f9f;
+}
