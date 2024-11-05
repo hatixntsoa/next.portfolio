@@ -1,4 +1,5 @@
-'use client'; // This is a client component
+'use client';
+
 import { useEffect } from 'react';
 
 const ThemeToggler = () => {
