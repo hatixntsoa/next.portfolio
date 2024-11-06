@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 
-const Loader = (minLoadingTime: number = 1500) => {
+const loadingTime = 2000;
+
+const Loader = (minLoadingTime: number = loadingTime) => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [hasMounted, setHasMounted] = useState<boolean>(false);
 
@@ -8,12 +10,11 @@ const Loader = (minLoadingTime: number = 1500) => {
     // Set the mounted state after the initial render
     setHasMounted(true);
 
-    // Promise for minimum loading time
-    const minLoadingPromise = new Promise<void>((resolve) => setTimeout(resolve, minLoadingTime));
-    const fontLoading = document.fonts.ready;
+    // Set a timeout for the minimum loading time
+    const timer = setTimeout(() => setIsLoading(false), minLoadingTime);
 
-    // Wait for both the minimum load time and fonts to be ready
-    Promise.all([minLoadingPromise, fontLoading]).then(() => setIsLoading(false));
+    // Cleanup the timer on unmount
+    return () => clearTimeout(timer);
   }, [minLoadingTime]);
 
   // Return true if loading is in progress or if the component has not yet mounted
