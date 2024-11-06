@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Loader from '../hooks/Loader';
 
 // Components
@@ -10,8 +11,16 @@ import Footer from './Footer';
 import Loading from './Loading';
 
 const MainContent: React.FC = () => {
+  // State to manage loading state
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  // Using the Loader hook inside the component
   const minLoadingTime: number = 2000;
-  const isLoading: boolean = Loader(minLoadingTime);
+
+  useEffect(() => {
+    const loadingStatus = Loader(minLoadingTime);
+    setIsLoading(loadingStatus);
+  }, [minLoadingTime]);
 
   return (
     <div className="flex items-center justify-center min-h-screen">
