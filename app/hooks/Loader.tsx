@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const loadingTime = 2000;
-
-const Loader = (minLoadingTime: number = loadingTime) => {
+const Loader = (minLoadingTime: number): boolean => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [hasMounted, setHasMounted] = useState<boolean>(false);
 

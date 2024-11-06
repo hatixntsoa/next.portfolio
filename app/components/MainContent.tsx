@@ -1,4 +1,5 @@
-"use client";
+import { useState, useEffect } from 'react';
+import Loader from '../hooks/Loader';
 
 // Components
 import ThemeToggler from './ThemeToggler';
@@ -9,11 +10,10 @@ import ReachMe from './ReachMe';
 import Footer from './Footer';
 import Loading from './Loading';
 
-// Hooks
-import Loader from '../hooks/Loader';
-
 const MainContent: React.FC = () => {
-  const isLoading: boolean = Loader();
+  const minLoadingTime: number = 2000;
+  const isLoading: boolean = Loader(minLoadingTime);
+
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="w-[58%] mx-auto">
