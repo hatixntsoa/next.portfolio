@@ -12,6 +12,37 @@ body {
   user-select: none;
 }
 
+.fade-in {
+  animation: fadeInUpShake .5s ease-out;
+}
+
+@keyframes fadeInUpShake {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95) translateX(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(10px) scale(0.98) translateX(10px);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0) scale(1) translateX(-5px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0) scale(1) translateX(5px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0) scale(1) translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) translateX(0);
+  }
+}
+
 /* Center container on the page with a width of 50% */
 .container {
   width: 58%;
@@ -30,7 +61,7 @@ body {
 /* Profile image with left alignment */
 .round-img {
   display: block;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 25px auto;
   border-radius: 50%;
   width: 200px;
   height: 200px;

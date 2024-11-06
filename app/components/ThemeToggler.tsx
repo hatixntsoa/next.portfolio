@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import useThemeToggle from '../hooks/ThemeToggler';
+import useThemeToggle from '../hooks/Toggler';
 
 const ThemeToggler: React.FC = () => {
   const { toggleTheme } = useThemeToggle();
