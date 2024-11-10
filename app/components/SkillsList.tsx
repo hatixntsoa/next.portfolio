@@ -1,40 +1,55 @@
 const projects = [
   {
-    name: "Git & GitHub CLI",
+    name: "Problem Solving",
     url: "https://github.com/h471x/git_gh",
     description: "Simple Automation Scripts.",
   },
   {
-    name: "markdown_previewer",
+    name: "Python",
     url: "https://github.com/h471x/markdown_previewer",
     description: "A markdown note-taking tool.",
   },
   {
-    name: "password_generator",
+    name: "DevOps",
     url: "https://github.com/h471x/password_generator",
-    description: "A Password Generation CLI Tool.",
+    description: "A Simple CLI Tool to generate passwords.",
   },
   {
-    name: "port_scanner",
+    name: "Kali Linux",
     url: "https://github.com/h471x/port_scanner",
     description: "A Simple CLI Tool to scan open ports.",
   },
   {
-    name: "web_scraper",
+    name: "Penetration Testing",
     url: "https://github.com/h471x/web_scraper",
     description: "A Simple CLI Tool to scrap the web.",
   },
   {
-    name: "whois_lookup",
+    name: "Cybersecurity",
+    url: "https://github.com/h471x/whois_lookup",
+    description: "A Simple CLI Tool to perform whois lookup.",
+  },
+  {
+    name: "Shell Scripting",
+    url: "https://github.com/h471x/whois_lookup",
+    description: "A Simple CLI Tool to perform whois lookup.",
+  },
+  {
+    name: "Networking",
+    url: "https://github.com/h471x/whois_lookup",
+    description: "A Simple CLI Tool to perform whois lookup.",
+  },
+  {
+    name: "Neovim",
     url: "https://github.com/h471x/whois_lookup",
     description: "A Simple CLI Tool to perform whois lookup.",
   },
 ];
 
-const ProjectList = () => {
+const SkillsList = () => {
   return (
     <>
-      <h2 className="command-line">   ~ cat projects </h2>
+      <h2 className="command-line">  󰔸 ~ cat skills </h2>
       <br />
       <div className="project-list">
         {projects.map((project) => (
@@ -61,4 +76,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default SkillsList;

@@ -3,7 +3,7 @@ const WhoAmI = () => {
     <>
       <div className="command-line">   ~ whoami </div>
       <br />
-      <p className="text-xl leading-[1.6]">
+      <p className="text-[20px] leading-[1.6]">
         Hello, I&apos;m <span className="highlight">Hatix Ntsoa</span>,
         a <span className="highlight">software developer </span>
         specializing <br /> in <span style={{ fontWeight: 'bold' }}>Python</span>,

@@ -44,16 +44,54 @@ body {
 }
 
 /* Center container on the page with a width of 50% */
-.container {
+.main-container {
   width: 58%;
   margin: 0 auto;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
-  text-align: left; /* Ensures left alignment of content */
+  text-align: left;
+}
+
+.main-content {
+  text-align: left;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.image-content {
+  width: 58%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
 }
 
 /* Content aligned to the left within the container */
-.content {
+.element-container {
+  width: 58%;
+  margin: 0 auto;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.element-content {
   text-align: left;
   line-height: 1.6;
 }
@@ -117,7 +155,7 @@ body {
 .project-list p {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adds space between bullet and text */
+  gap: 10px;
   margin: 0;
   padding: 5px 0;
 }
@@ -144,6 +182,7 @@ body {
   font-weight: bold;
   color: var(--highlight-color) !important;
   text-decoration: none;
+  white-space: no-wrap;
 }
 
 .custom-link:hover {

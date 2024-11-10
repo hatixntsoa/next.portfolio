@@ -19,7 +19,7 @@ const ReachMe = () => {
       <h2 className="command-line">   ~ cat reachme </h2>
       <br />
       <p className="text-xl leading-[1.6]">
-        Feel free to reach out to me via&nbsp;
+        Feel free to contact me via&nbsp;
         {contactLinks.map((link, index) => (
           <span key={link.name}>
             <a

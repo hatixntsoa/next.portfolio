@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 // import ThemeToggler from './ThemeToggler';
 import Profile from './Profile';
 import ProjectList from './ProjectList';
+// import SkillsList from './SkillsList';
 import WhoAmI from './WhoAmI';
 import ReachMe from './ReachMe';
 import Footer from './Footer';
@@ -24,23 +25,24 @@ const MainContent: React.FC = () => {
   }, [loadingStatus]);
 
   return (
-    <div className={`flex items-center justify-center min-h-screen ${!isLoading ? 'fade-in' : ''}`}>
-      <div className="w-[58%] mx-auto">
-        {isLoading ? (
-          <Loading />
-        ) : (
-          <div className="content flex flex-col items-start">
-            {/* <ThemeToggler /> */}
+    <>
+      {/* {!isLoading && <ThemeToggler />} */}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <div className={`main-container fade-in`}>
+          <div className="main-content">
             <Profile />
             <WhoAmI />
+            {/* <SkillsList /> */}
             <ProjectList />
             <ReachMe />
             <Footer />
           </div>
-        )}
-      </div>
-    </div>
-  );
+        </div>
+      )}
+    </>
+  );  
 };
 
 export default MainContent;
