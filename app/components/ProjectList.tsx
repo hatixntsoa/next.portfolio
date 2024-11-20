@@ -29,6 +29,11 @@ const projects = [
     url: "https://github.com/h471x/whois_lookup",
     description: "A Simple CLI Tool to perform whois lookup.",
   },
+  {
+    name: "youtube_downloader",
+    url: "https://github.com/h471x/youtube_downloader",
+    description: "Simple YouTube Video Downloader.",
+  },
 ];
 
 const ProjectList = () => {
