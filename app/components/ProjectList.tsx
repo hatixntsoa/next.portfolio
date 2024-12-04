@@ -1,5 +1,10 @@
 const projects = [
   {
+    name: "Baiboly JSON",
+    url: "https://github.com/h471x/baiboly_json",
+    description: "A Simple Malagasy Bible App using JSON Data.",
+  },
+  {
     name: "Git & GitHub CLI",
     url: "https://github.com/h471x/git_gh",
     description: "Simple Automation Scripts.",
