@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 // Components
 // import ThemeToggler from './ThemeToggler';
 import Profile from './Profile';
-import ProjectList from './ProjectList';
+import ProjectsList from './ProjectsList';
 // import SkillsList from './SkillsList';
 import WhoAmI from './WhoAmI';
 import ReachMe from './ReachMe';
@@ -35,7 +35,7 @@ const MainContent: React.FC = () => {
             <Profile />
             <WhoAmI />
             {/* <SkillsList /> */}
-            <ProjectList />
+            <ProjectsList />
             <ReachMe />
             <Footer />
           </div>

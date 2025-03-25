@@ -46,7 +46,7 @@ const projects = [
   },
 ];
 
-const ProjectList = () => {
+const ProjectsList = () => {
   return (
     <>
       <h2 className="command-line">   ~ cat projects </h2>
@@ -76,4 +76,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default ProjectsList;
