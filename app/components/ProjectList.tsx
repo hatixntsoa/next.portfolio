@@ -1,5 +1,10 @@
 const projects = [
   {
+    name: "WSL2 Forwarder",
+    url: "https://github.com/h471x/wsl2_forwarder",
+    description: "Simple Batch Script to Forward WSL2 Ports.",
+  },
+  {
     name: "Baiboly JSON",
     url: "https://github.com/h471x/baiboly_json",
     description: "A Simple Malagasy Bible App using JSON Data.",
