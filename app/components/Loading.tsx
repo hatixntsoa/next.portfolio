@@ -3,8 +3,8 @@ import loadingImage from '../images/logo.gif';
 
 const Loading: React.FC = () => {
   return (
-    <div className={`image-container`}>
-      <div className="image-content">
+    <div className={`loading-image-container`}>
+      <div className="loading-image-content">
         <div className="flex justify-center items-center min-h-screen">
           <Image 
             src={loadingImage} 
