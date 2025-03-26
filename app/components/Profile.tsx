@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import hatixImage from '../images/hatix.jpg';
+import hatixImage from '../images/HaintsoN.jpg';
 
 const Profile: React.FC = () => {
   return (
