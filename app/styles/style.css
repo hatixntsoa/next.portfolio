@@ -163,6 +163,7 @@ body {
 .bullet {
   color: var(--primary-color);
   font-size: 18px;
+  text-decoration: none;
 }
 
 .footer {
@@ -185,6 +186,6 @@ body {
   white-space: no-wrap;
 }
 
-.custom-link:hover {
+.project:hover {
   text-decoration: underline;
 }

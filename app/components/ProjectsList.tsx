@@ -51,22 +51,25 @@ const ProjectsList = () => {
     <>
       <h2 className="command-line">   ~ cat projects </h2>
       <br />
-      <div className="project-list">
+      <div className="project-list flex flex-col gap-5">
         {projects.map((project) => (
-          <p key={project.name} className="text-xl leading-[1.6] flex items-center">
-            <span className="bullet">●</span>
-            <span className="flex items-center w-full truncate">
-              <a
-                className="custom-link whitespace-nowrap"
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {project.name}
-              </a>
-              <span className="ml-2 whitespace-nowrap">
-                : {project.description}
-              </span>
+          <p key={project.name} className="text-xl leading-[1.6] flex flex-wrap">
+            <a
+              className="custom-link"
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="bullet hidden sm:inline">● </span>
+              <span className="project">{project.name}</span>
+            </a>
+            <span className="
+              project-description
+              inline-block
+              sm:inline w-full
+              sm:w-auto"
+            >
+              {project.description}
             </span>
           </p>
         ))}
