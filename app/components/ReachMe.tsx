@@ -1,11 +1,15 @@
 const contactLinks = [
   {
-    name: "Gmail",
-    url: "mailto:hatixntsoa@gmail.com",
+    name: "Email",
+    url: "mailto:hatixntsoa@proton.me",
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/hatixntsoa",
+  },
+  {
+    name: "Discord",
+    url: "https://discord.com/users/1082707265548718110",
   },
   {
     name: "GitHub",
@@ -19,11 +23,11 @@ const ReachMe = () => {
       <h2 className="command-line">   ~ cat reachme </h2>
       <br />
       <p className="text-xl leading-[1.6]">
-        Feel free to contact me via&nbsp;
+        Get in touch via&nbsp;
         {contactLinks.map((link, index) => (
           <span key={link.name}>
             <a
-              className="custom-link"
+              className="social link"
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"

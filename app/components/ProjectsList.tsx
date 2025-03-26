@@ -55,13 +55,12 @@ const ProjectsList = () => {
         {projects.map((project) => (
           <p key={project.name} className="text-xl leading-[1.6] flex flex-wrap">
             <a
-              className="custom-link"
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="bullet hidden sm:inline">● </span>
-              <span className="project">{project.name}</span>
+              <span className="project link">{project.name}</span>
             </a>
             <span className="
               project-description

@@ -222,13 +222,13 @@ body {
 }
 
 /* Links styling */
-.custom-link {
+.project, .social {
   font-weight: bold;
   color: var(--highlight-color) !important;
   text-decoration: none;
   white-space: no-wrap;
 }
 
-.project:hover {
+.link:hover {
   text-decoration: underline;
 }
