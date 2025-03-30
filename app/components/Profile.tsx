@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import mainImage from '../images/HaintsoN.jpg';
-import hoverImage from '../images/logo.gif';
+import mainImage from '../images/ghibli.grey.png';
+import hoverImage from '../images/ghibli.png';
 
 const Profile: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
+
+  const hoverTime = 0;
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -13,7 +15,7 @@ const Profile: React.FC = () => {
   const handleMouseLeave = () => {
     setTimeout(() => {
       setIsHovered(false);
-    }, 2000);
+    }, hoverTime);
   };
 
   return (
