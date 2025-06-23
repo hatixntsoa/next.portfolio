@@ -13,7 +13,7 @@ const contactLinks = [
   },
   {
     name: "GitHub",
-    url: "https://github.com/h471x",
+    url: "https://github.com/hatixntsoa",
   },
 ];
 
