@@ -1,21 +1,4 @@
-const contactLinks = [
-  {
-    name: "Email",
-    url: "mailto:hatixntsoa@proton.me",
-  },
-  {
-    name: "LinkedIn",
-    url: "https://www.linkedin.com/in/hatixntsoa",
-  },
-  {
-    name: "Discord",
-    url: "https://discord.com/users/1082707265548718110",
-  },
-  {
-    name: "GitHub",
-    url: "https://github.com/hatixntsoa",
-  },
-];
+import contactLinks from "../data/contacts.json";
 
 const ReachMe = () => {
   return (
