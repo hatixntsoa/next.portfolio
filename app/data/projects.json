@@ -1,8 +1,13 @@
 [
 	{
+		"name": "FacePhish",
+		"url": "https://tangled.sh/@hatixntsoa.tngl.sh/facephish",
+		"description": " A Simple Facebook Phishing Page • For educational use only • The author is not responsible for illegal misuse."
+	},
+	{
 		"name": "InstaPhish",
 		"url": "https://tangled.sh/@hatixntsoa.tngl.sh/instaphish",
-		"description": "Simple Instagram Phishing Demo."
+		"description": " A Simple Instagram Phishing Page • For educational use only • The author is not responsible for illegal misuse."
 	},
 	{
 		"name": "WSL2 Forwarder",
