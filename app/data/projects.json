@@ -1,56 +1,56 @@
 [
 	{
-		"name": "FacePhish",
+		"name": "facephish",
 		"url": "https://tangled.sh/@hatixntsoa.bsky.social/facephish",
-		"description": " A Simple Facebook Phishing Page • For educational use only • The author is not responsible for illegal misuse."
+		"description": " A Simple Facebook Phishing Page."
 	},
 	{
-		"name": "InstaPhish",
+		"name": "instaphish",
 		"url": "https://tangled.sh/@hatixntsoa.bsky.social/instaphish",
-		"description": " A Simple Instagram Phishing Page • For educational use only • The author is not responsible for illegal misuse."
+		"description": " A Simple Instagram Phishing Page."
 	},
 	{
-		"name": "WSL2 Forwarder",
+		"name": "wsl2.forwarder",
 		"url": "https://github.com/hatixntsoa/wsl2.forwarder",
 		"description": "Simple Batch Script to Forward WSL2 Ports."
 	},
 	{
-		"name": "Baiboly JSON",
+		"name": "baiboly.json",
 		"url": "https://github.com/hatixntsoa/baiboly.json",
 		"description": "A Simple Malagasy Bible App using JSON Data."
 	},
 	{
-		"name": "Git & GitHub CLI",
+		"name": "source.controller",
 		"url": "https://github.com/hatixntsoa/source.controller",
 		"description": "Simple Automation Scripts."
 	},
 	{
-		"name": "markdown_previewer",
+		"name": "markdown.previewer",
 		"url": "https://github.com/hatixntsoa/markdown.previewer",
 		"description": "A markdown note-taking tool."
 	},
 	{
-		"name": "password_generator",
+		"name": "password.generator",
 		"url": "https://github.com/hatixntsoa/password.generator",
 		"description": "A Password Generation CLI Tool."
 	},
 	{
-		"name": "port_scanner",
+		"name": "port.scanner",
 		"url": "https://github.com/hatixntsoa/port.scanner",
 		"description": "A Simple CLI Tool to scan open ports."
 	},
 	{
-		"name": "web_scraper",
+		"name": "web.scraper",
 		"url": "https://github.com/hatixntsoa/web.scraper",
 		"description": "A Simple CLI Tool to scrap the web."
 	},
 	{
-		"name": "whois_lookup",
+		"name": "whois.lookup",
 		"url": "https://github.com/hatixntsoa/whois.lookup",
 		"description": "A Simple CLI Tool to perform whois lookup."
 	},
 	{
-		"name": "youtube_downloader",
+		"name": "youtube.downloader",
 		"url": "https://github.com/hatixntsoa/youtube.downloader",
 		"description": "Simple YouTube Video Downloader."
 	}
